@@ -1,6 +1,5 @@
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
@@ -33,12 +32,17 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.tagline}
-      description="Description will go into a meta tag in <head />"
+      // title={siteConfig.tagline}
+      description={siteConfig.tagline}
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* <HomepageFeatures /> */}
+        <div
+          style={{ textAlign: "center", padding: "10rem", fontWeight: "bold" }}
+        >
+          Under Construction
+        </div>
       </main>
     </Layout>
   );
