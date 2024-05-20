@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Balance
 
-The Balance component is use for displaying SUI balance for current user address on the currently active network.
+The Balance component is used for displaying SUI balance for current user address on the currently active network.
 
 ## Usage
 
