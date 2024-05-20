@@ -42,15 +42,13 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
+          editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
+          editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -125,21 +123,12 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-  plugins: [
-    [
-      "@dipakparmar/docusaurus-plugin-umami",
-      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
-      {
-        websiteID: "80fb4309-441e-4f26-b820-5af1014a4d18", // Required
-        analyticsDomain: "sui-dapp-starter.dev", // Required
-        // scriptName: "", // Optional
-        // dataHostURL: "", // Optional
-        // dataAutoTrack: true, // Optional
-        // dataDoNotTrack: true, // Optional
-        // dataCache: true, // Optional
-        // dataDomains: "", // comma separated list of domains, *Recommended*
-      },
-    ],
+  scripts: [
+    {
+      src: "https://cloud.umami.is/script.js",
+      defer: true,
+      "data-website-id": "80fb4309-441e-4f26-b820-5af1014a4d18",
+    },
   ],
 };
 
