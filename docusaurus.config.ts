@@ -1,13 +1,14 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
-
-const SITE_TITLE = "Sui dApp Starter";
-const SITE_SLOGAN = "Full-Stack Sui Starter on Steroids";
-const SITE_URL = "https://sui-dapp-starter.dev";
-const GITHUB_PROJECT_NAME = "sui-dapp-starter.dev";
-const GITHUB_PROJECT_USER = "kkomelin";
-const DISCORD_INVITE_LINK = "https://discord.com/invite/HuDPpXz4Hx";
+import {
+  DISCORD_INVITE_LINK,
+  GITHUB_PROJECT_NAME,
+  GITHUB_PROJECT_USER,
+  SITE_SLOGAN,
+  SITE_TITLE,
+  SITE_URL,
+} from "./src/constants/site";
 
 const config: Config = {
   title: SITE_TITLE,
@@ -58,8 +59,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/sui-dapp-starter-social-preview.png",
     navbar: {
       title: SITE_TITLE,
       logo: {
