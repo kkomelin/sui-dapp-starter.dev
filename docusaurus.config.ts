@@ -7,6 +7,7 @@ const SITE_SLOGAN = "Full-Stack Sui Starter on Steroids";
 const SITE_URL = "https://sui-dapp-starter.dev";
 const GITHUB_PROJECT_NAME = "sui-dapp-starter.dev";
 const GITHUB_PROJECT_USER = "kkomelin";
+const DISCORD_INVITE_LINK = "https://discord.com/invite/HuDPpXz4Hx";
 
 const config: Config = {
   title: SITE_TITLE,
@@ -98,16 +99,8 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: DISCORD_INVITE_LINK,
             },
           ],
         },
