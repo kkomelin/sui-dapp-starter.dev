@@ -125,6 +125,22 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      {
+        websiteID: "80fb4309-441e-4f26-b820-5af1014a4d18", // Required
+        analyticsDomain: "sui-dapp-starter.dev", // Required
+        // scriptName: "", // Optional
+        // dataHostURL: "", // Optional
+        // dataAutoTrack: true, // Optional
+        // dataDoNotTrack: true, // Optional
+        // dataCache: true, // Optional
+        // dataDomains: "", // comma separated list of domains, *Recommended*
+      },
+    ],
+  ],
 };
 
 export default config;

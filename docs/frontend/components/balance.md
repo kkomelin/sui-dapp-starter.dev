@@ -6,9 +6,9 @@ sidebar_position: 1
 
 The Balance component is use for displaying SUI balance for current user address on the currently active network.
 
-## Create a docs version
+## Usage
 
-```ts title="MyComponent.js"
+```js title="MyComponent.js"
 <Balance />
 ```
 

@@ -15,6 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@dipakparmar/docusaurus-plugin-umami": "^2.1.5",
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
     "@mdx-js/react": "^3.0.1",
