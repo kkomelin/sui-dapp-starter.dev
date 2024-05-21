@@ -3,6 +3,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
 /* You can override the default Infima variables here. */
 :root {
@@ -28,4 +31,14 @@
   --ifm-color-primary-lightest: #dfeeff;
   --ifm-background-color: #011631;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.btn-reset {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }

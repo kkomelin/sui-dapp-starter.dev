@@ -1,6 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
+import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 import {
   DISCORD_INVITE_LINK,
   GITHUB_PROJECT_NAME,
@@ -130,6 +131,7 @@ const config: Config = {
       "data-website-id": "80fb4309-441e-4f26-b820-5af1014a4d18",
     },
   ],
+  plugins: [tailwindPlugin],
 };
 
 export default config;
