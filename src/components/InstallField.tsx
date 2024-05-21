@@ -1,5 +1,5 @@
 import c from 'clsx'
-import { CircleCheckIcon, CopyIcon } from 'lucide-react'
+import { CheckIcon, CopyIcon } from 'lucide-react'
 import { useState } from 'react'
 import { INSTALL_COMMAND } from '../constants/misc'
 
@@ -30,13 +30,13 @@ const InstallField = () => {
         onClick={handleCopyToClipboard}
       >
         <CopyIcon
-          className={c('h-4 w-4 text-blue-600 dark:text-blue-100', {
+          className={c('h-4 w-4 text-gray-600 dark:text-gray-100', {
             hidden: isClicked,
           })}
         />
-        <CircleCheckIcon
+        <CheckIcon
           className={c('h-4 w-4 text-blue-600 dark:text-blue-100', {
-            'hidden text-blue-300': !isClicked,
+            'hidden': !isClicked,
           })}
         />
       </button>
