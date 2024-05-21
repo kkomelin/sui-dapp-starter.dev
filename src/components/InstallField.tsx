@@ -22,7 +22,7 @@ const InstallField = () => {
       <input
         type="text"
         readOnly={true}
-        className="rounded-lg border-none py-2 pl-4 pr-8 text-lg text-gray-600 outline-none dark:text-gray-100"
+        className="rounded-lg border-none py-2 pl-4 pr-8 text-lg text-gray-600 outline-none dark:text-gray-100 min-w-[290px]"
         value={INSTALL_COMMAND}
       />
       <button

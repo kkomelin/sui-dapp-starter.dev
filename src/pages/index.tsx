@@ -14,12 +14,14 @@ function HomepageHeader() {
       <div className="container">
         <img
           src="/img/logo.svg"
-          className="h-28 w-28"
+          className="h-28 w-28 mx-auto"
           alt={`${SITE_TITLE} Logo`}
         />
+        
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
+
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <InstallField />
