@@ -13,35 +13,36 @@ import {
 
 const config: Config = {
   title: SITE_TITLE,
+  titleDelimiter: '-',
   tagline: SITE_SLOGAN,
-  favicon: "img/favicon.ico",
+  favicon: 'img/favicon.ico',
 
   url: SITE_URL,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: GITHUB_PROJECT_USER,
   projectName: GITHUB_PROJECT_NAME,
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
@@ -53,19 +54,22 @@ const config: Config = {
           editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
-    image: "img/sui-dapp-starter-social-preview.png",
+    image: 'img/sui-dapp-starter-social-preview.png',
+    metadata: [
+      { name: 'msapplication-TileColor', content: '#242424' },
+      { name: 'theme-color', content: '#242424' },
+    ],
     navbar: {
       title: SITE_TITLE,
       logo: {
         alt: `${SITE_TITLE} Logo`,
-        src: "img/logo.svg",
+        src: 'img/logo.svg',
       },
       items: [
         // {
@@ -77,13 +81,13 @@ const config: Config = {
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
-          label: "GitHub",
-          position: "right",
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         // {
         //   title: "Docs",
@@ -95,10 +99,10 @@ const config: Config = {
         //   ],
         // },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "Discord",
+              label: 'Discord',
               href: DISCORD_INVITE_LINK,
             },
           ],
@@ -124,14 +128,70 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/apple-touch-icon.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon-32x32.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon-16x16.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/site.webmanifest',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'mask-icon',
+        href: '/img/safari-pinned-tab.svg',
+        color: '#4da2ff',
+      },
+    },
+    // // Declare some json-ld structured data
+    // {
+    //   tagName: 'script',
+    //   attributes: {
+    //     type: 'application/ld+json',
+    //   },
+    //   innerHTML: JSON.stringify({
+    //     '@context': 'https://schema.org/',
+    //     '@type': 'Organization',
+    //     name: 'Meta Open Source',
+    //     url: 'https://opensource.fb.com/',
+    //     logo: 'https://opensource.fb.com/img/logos/Meta-Open-Source.svg',
+    //   }),
+    // },
+  ],
   scripts: [
     {
-      src: "https://cloud.umami.is/script.js",
+      src: 'https://cloud.umami.is/script.js',
       defer: true,
-      "data-website-id": "80fb4309-441e-4f26-b820-5af1014a4d18",
+      'data-website-id': '80fb4309-441e-4f26-b820-5af1014a4d18',
     },
   ],
   plugins: [tailwindPlugin],
-};
+}
 
 export default config;
