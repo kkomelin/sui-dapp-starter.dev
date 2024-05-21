@@ -26,7 +26,7 @@ const InstallField = () => {
         value={INSTALL_COMMAND}
       />
       <button
-        className="-ml-9 flex cursor-pointer flex-col items-center justify-center border-none bg-transparent p-2 outline-none "
+        className="-ml-10 flex cursor-pointer flex-col items-center justify-center border-none bg-transparent p-2 outline-none "
         onClick={handleCopyToClipboard}
       >
         <CopyIcon
