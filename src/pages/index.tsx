@@ -4,6 +4,7 @@ import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 
+import { DEMO_URL } from "../constants/site";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
@@ -18,10 +19,19 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
+            to={DEMO_URL}
+            target="_blank"
+            id="demo-button"
+            data-umami-event="Demo button"
+          >
+            Demo
+          </Link>
+          {/* <Link
+            className="button button--secondary button--lg"
             to="/docs/intro"
           >
             Tutorial - 5min ⏱️
-          </Link>
+          </Link> */}
         </div>
       </div>
     </header>
