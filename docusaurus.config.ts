@@ -78,6 +78,12 @@ const config: Config = {
         //   position: "left",
         //   label: "Tutorial",
         // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Docs',
+        },
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
@@ -89,15 +95,15 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: "Docs",
-        //   items: [
-        //     {
-        //       label: "Tutorial",
-        //       to: "/docs/intro",
-        //     },
-        //   ],
-        // },
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Frontend',
+              to: '/docs/category/frontend',
+            },
+          ],
+        },
         {
           title: 'Community',
           items: [
