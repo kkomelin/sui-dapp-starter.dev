@@ -117,7 +117,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Konstantin Komelin. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Konstantin Komelin`,
     },
     prism: {
       theme: prismThemes.github,
