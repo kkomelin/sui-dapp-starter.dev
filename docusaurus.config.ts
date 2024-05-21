@@ -127,7 +127,7 @@ const config: Config = {
         //   ],
         // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Konstantin Komelin`,
+      // copyright: `Copyright © ${new Date().getFullYear()} Konstantin Komelin`,
     },
     prism: {
       theme: prismThemes.github,
