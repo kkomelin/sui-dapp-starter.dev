@@ -18,13 +18,13 @@ const InstallField = () => {
 
   return (
     <div
-      className="my-6 flex flex-row items-center justify-center gap-1"
+      className="my-6 flex flex-row items-center justify-center gap-1 border border-blue-300 border-solid max-w-min rounded-lg mx-auto pr-1"
       onClick={handleCopyToClipboard}
     >
       <input
         type="text"
         readOnly={true}
-        className="rounded-lg border-none py-2 pl-4 pr-8 text-lg text-gray-600 outline-none dark:text-gray-100 min-w-[290px]"
+        className="rounded-lg border-none py-2 pl-4 pr-8 text-lg text-gray-600 outline-none dark:text-gray-100 w-[290px]"
         value={INSTALL_COMMAND}
       />
       <button
@@ -32,7 +32,7 @@ const InstallField = () => {
         onClick={handleCopyToClipboard}
       >
         <CopyIcon
-          className={c('h-4 w-4 text-gray-600 dark:text-gray-100', {
+          className={c('h-4 w-4 text-blue-600 dark:text-blue-100', {
             hidden: isClicked,
           })}
         />

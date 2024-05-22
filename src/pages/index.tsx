@@ -2,17 +2,22 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import InstallField from '@site/src/components/InstallField'
 import Heading from '@theme/Heading'
 import Layout from '@theme/Layout'
-import clsx from 'clsx'
 import { BookOpenIcon, Gamepad2Icon } from 'lucide-react'
 import ButtonLink from '../components/ButtonLink'
-import { DEMO_URL } from '../constants/site'
-import styles from './index.module.css'
+import HomepageFeatures from '../components/HomepageFeatures'
+import { DEMO_URL, SITE_TITLE } from '../constants/site'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className="relative overflow-hidden px-6 py-6 text-center md:py-8">
       <div className="container">
+        <img
+          src="/img/logo.svg"
+          alt={`${SITE_TITLE} Logo`}
+          className="h-32 w-32 mt-4"
+        />
+
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -21,7 +26,7 @@ function HomepageHeader() {
 
         <InstallField />
 
-        <div className="flex flex-row items-center justify-center gap-3">
+        <div className="flex flex-row items-center justify-center gap-4 pt-4">
           <ButtonLink
             to={DEMO_URL}
             target="_blank"
@@ -51,11 +56,6 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         {/* <HomepageFeatures /> */}
-        <div
-          style={{ textAlign: 'center', padding: '10rem', fontWeight: 'bold' }}
-        >
-          Under Construction
-        </div>
       </main>
     </Layout>
   )
