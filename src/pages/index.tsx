@@ -1,10 +1,11 @@
-import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import InstallField from '@site/src/components/InstallField'
 import Heading from '@theme/Heading'
 import Layout from '@theme/Layout'
 import clsx from 'clsx'
-import { DEMO_URL, SITE_TITLE } from '../constants/site'
+import { BookOpenIcon, Gamepad2Icon } from 'lucide-react'
+import ButtonLink from '../components/ButtonLink'
+import { DEMO_URL } from '../constants/site'
 import styles from './index.module.css'
 
 function HomepageHeader() {
@@ -12,12 +13,6 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img
-          src="/img/logo.svg"
-          className="h-28 w-28 mx-auto"
-          alt={`${SITE_TITLE} Logo`}
-        />
-        
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -26,22 +21,20 @@ function HomepageHeader() {
 
         <InstallField />
 
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
+        <div className="flex flex-row items-center justify-center gap-3">
+          <ButtonLink
             to={DEMO_URL}
             target="_blank"
             id="demo-button"
             data-umami-event="Demo button"
+            className="!text-blue-500"
           >
-            Demo
-          </Link>
-          {/* <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Tutorial - 5min ⏱️
-          </Link> */}
+            Demo <Gamepad2Icon className="h-4 w-4" />
+          </ButtonLink>
+
+          <ButtonLink to="/docs">
+            Docs <BookOpenIcon className="h-4 w-4" />
+          </ButtonLink>
         </div>
       </div>
     </header>
