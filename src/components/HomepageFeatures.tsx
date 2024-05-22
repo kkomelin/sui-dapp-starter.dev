@@ -50,7 +50,7 @@ const features: IFeature[] = [
     description: (
       <>
         Sui dApp Starter seamlessly integrates with Local Sui Explorer, which{' '}
-        <b>lets you check your local transaction data</b> during development.
+        lets you <b>check your local transaction data</b> during development.
       </>
     ),
   },
@@ -77,9 +77,11 @@ const features: IFeature[] = [
     description: (
       <>
         The starter includes an{' '}
-        <b>example Move package, utilizing on-chain randomness</b>, and a{' '}
-        <b>frontend client for it</b>, so you have a solid platform to jump
-        from.
+        <b>
+          example Move package, utilizing on-chain randomness, with a frontend
+          client for it
+        </b>
+        , so you have a solid platform to jump from.
       </>
     ),
   },
