@@ -4,12 +4,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 import {
   DISCORD_INVITE_LINK,
-  GITHUB_PROJECT_NAME,
-  GITHUB_PROJECT_USER,
+  GITHUB_DOCS_PROJECT_NAME,
+  GITHUB_DOCS_PROJECT_USER,
+  GITHUB_TARGET_PROJECT_URL,
   SITE_SLOGAN,
   SITE_TITLE,
   SITE_URL,
-} from "./src/constants/site";
+} from './src/constants/site'
 
 const config: Config = {
   title: SITE_TITLE,
@@ -23,8 +24,8 @@ const config: Config = {
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: GITHUB_PROJECT_USER,
-  projectName: GITHUB_PROJECT_NAME,
+  organizationName: GITHUB_DOCS_PROJECT_USER,
+  projectName: GITHUB_DOCS_PROJECT_NAME,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,13 +46,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
+          // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}/tree/main/`,
+          // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -86,7 +87,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
+          href: GITHUB_TARGET_PROJECT_URL,
           label: 'GitHub',
           position: 'right',
         },
@@ -118,15 +119,15 @@ const config: Config = {
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             // {
             //   label: "Blog",
             //   to: "/blog",
             // },
             {
-              label: "GitHub",
-              href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
+              label: 'GitHub',
+              href: GITHUB_TARGET_PROJECT_URL,
             },
           ],
         },
