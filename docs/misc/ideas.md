@@ -15,10 +15,10 @@ Ideas on how to make Sui dApp Starter better. Sort of a roadmap without delivery
 - [x] infra: Integrate with Local Sui Explorer
 - [x] infra: Develop a cli tool for easier project creation
 - [x] infra: frontend: Enable Github Actions for linting
+- [x] docs: Develop a site with documentation
+- [ ] docs: Write/record how-to guides
 - [ ] frontend: Develop better Sui Kit, Tailwind and Radix theme integration
 - [ ] frontend: Add Arweave deployment scripts
-- [ ] docs: Develop a landing page
-- [ ] docs: Write/record how-to guides
 - [ ] infra: Enable Husky and lint-staged for pre-commit
 - [ ] backend: Find a way to lint and format the backend contracts
 - [ ] backend: Github Actions for linting and testing the contracts
