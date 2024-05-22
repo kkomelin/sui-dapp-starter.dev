@@ -7,6 +7,7 @@ import { BookOpenIcon, Gamepad2Icon } from 'lucide-react'
 import ButtonLink from '../components/ButtonLink'
 import { DEMO_URL } from '../constants/site'
 import styles from './index.module.css'
+import './src/index'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
