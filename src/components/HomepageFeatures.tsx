@@ -7,45 +7,79 @@ interface IFeature {
 
 const features: IFeature[] = [
   {
-    title: 'Developer Experience First',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
     title: 'Focus on What Matters',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Sui dApp Starter lets you{' '}
+        <b>focus on your business logic from day one</b> instead of developing
+        the app skeleton for weeks.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Truly Full-Stack',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sui dApp Starter is a <b>monorepo</b>, powered by <b>pnpm workspaces</b>
+        , where frontend and backend are integrated with each other through
+        console scripts.
       </>
     ),
   },
   {
-    title: '(todo: add links) Custom Components',
+    title: 'DX First',
     description: (
       <>
-        NetworkType, Balance, Faucet, CustomConnectButton
+        Designed with developer experience in mind, Sui dApp Starter provides
+        necessary tooling to{' '}
+        <b>work with networks, build, test, lint, format and deploy</b>.
       </>
     ),
   },
   {
-    title: '(todo: add links) Custom Hooks',
+    title: 'Decentralized',
     description: (
       <>
-        useNetworkType, useBalance, useFaucet, useTransact
+        Client-side React as a foundation for the frontend part lets you{' '}
+        <b>host it in a decentralized manner</b>.
+      </>
+    ),
+  },
+  {
+    title: 'Local Block Explorer',
+    description: (
+      <>
+        Sui dApp Starter seamlessly integrates with Local Sui Explorer, which{' '}
+        <b>lets you check your local transaction data</b> during development.
+      </>
+    ),
+  },
+  {
+    title: 'Common Sui Components',
+    description: (
+      <>
+        The <b>NetworkType, Balance, Faucet and other components</b> are
+        included so you don't have to reinvent the wheel.
+      </>
+    ),
+  },
+  {
+    title: 'Custom Sui Hooks',
+    description: (
+      <>
+        The <b>useNetworkType, useBalance, useFaucet, useTransact</b> hooks
+        encapsulate routine tasks, allowing you to develop quicker.
+      </>
+    ),
+  },
+  {
+    title: 'Learn by Example',
+    description: (
+      <>
+        The starter includes an{' '}
+        <b>example Move package, utilizing on-chain randomness</b>, and a{' '}
+        <b>frontend client for it</b>, so you have a solid platform to jump
+        from.
       </>
     ),
   },
