@@ -117,19 +117,19 @@ const config: Config = {
             },
           ],
         },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Blog",
-        //       to: "/blog",
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
-        //     },
-        //   ],
-        // },
+        {
+          title: "More",
+          items: [
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
+            {
+              label: "GitHub",
+              href: `https://github.com/${GITHUB_PROJECT_USER}/${GITHUB_PROJECT_NAME}`,
+            },
+          ],
+        },
       ],
       // copyright: `Copyright © ${new Date().getFullYear()} Konstantin Komelin`,
     },
