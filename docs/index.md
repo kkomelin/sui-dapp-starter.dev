@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **Sui dApp Starter in less than 5 minutes**.
+All you need to start with Sui dApp Starter...
 
 ## Getting Started
 
@@ -12,11 +12,11 @@ TBC
 
 Or **try Sui dApp Starter immediately** with **[our demo](https://demo.sui-dapp-starter.dev/)**.
 
-### What you'll need
+## What you'll need
 
 TBC
 
-## Generate a new site
+## Scaffold a new app
 
 TBC
 
