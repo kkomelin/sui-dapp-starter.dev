@@ -8,6 +8,7 @@ const InstallField = () => {
 
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(INSTALL_COMMAND)
+    // @ts-expect-error Undefined umami
     window.umami?.track('Copy-to-clipboard control')
     setIsClicked(true)
     setTimeout(() => {
