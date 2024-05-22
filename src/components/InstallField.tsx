@@ -8,7 +8,7 @@ const InstallField = () => {
 
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(INSTALL_COMMAND)
-    umami.track('Copy-to-clipboard control')
+    umami?.track('Copy-to-clipboard control')
     setIsClicked(true)
     setTimeout(() => {
       setIsClicked(false)
