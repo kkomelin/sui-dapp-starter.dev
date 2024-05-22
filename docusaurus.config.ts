@@ -102,6 +102,10 @@ const config: Config = {
               label: 'Frontend',
               to: '/docs/category/frontend',
             },
+            {
+              label: 'Miscellaneous',
+              to: '/docs/category/miscellaneous',
+            },
           ],
         },
         {
