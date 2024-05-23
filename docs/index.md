@@ -10,7 +10,7 @@ All you need to start with Sui dApp Starter...
 
 TBC
 
-Or **try Sui dApp Starter immediately** with **[our demo](https://demo.sui-dapp-starter.dev/)**.
+Or **try Sui dApp Starter right away** with **[our demo](https://demo.sui-dapp-starter.dev/)**.
 
 ## What you'll need
 

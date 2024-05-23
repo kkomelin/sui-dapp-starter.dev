@@ -7,6 +7,16 @@ interface IReview {
 
 const reviews: IReview[] = [
   {
+    name: '@Xenon',
+    description: (
+      <>
+        Excellent starter package for hackathons, you can jump right in and
+        start building your idea from something that works and not from zero.
+        Thanks!
+      </>
+    ),
+  },
+  {
     name: '@Erarnitox',
     description: <>Thank your for providing this for us! And even for free!</>,
   },
@@ -18,7 +28,7 @@ const reviews: IReview[] = [
 
 function Review({ name, description }: IReview) {
   return (
-    <div className="flex flex-col gap-2 rounded-lg border border-solid border-blue-500 p-5 sm:flex-row">
+    <div className="flex flex-col gap-2 rounded-lg border border-solid border-blue-500 p-5 even:items-end">
       <b>{name}</b>
       <div className="">{description}</div>
     </div>
