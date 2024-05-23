@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getting Started
+# Quick Start
 
 > Sui dApp Starter is a full-stack boilerplate which let's you scaffold a solid foundation for your Sui project and focus on the business logic of your dapp from day one.
 
