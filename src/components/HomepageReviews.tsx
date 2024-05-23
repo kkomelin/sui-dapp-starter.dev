@@ -30,7 +30,7 @@ function Review({ name, description }: IReview) {
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-solid border-blue-500 p-5 even:items-end">
       <b>{name}</b>
-      <div className="">{description}</div>
+      <div>{description}</div>
     </div>
   )
 }

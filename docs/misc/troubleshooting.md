@@ -4,7 +4,8 @@ sidebar_position: 3
 
 # Troubleshooting
 
-A collection of solutions for user-reported issues.
+If you have any issue with the starter, first scan this page, then check our [issue queue](https://github.com/kkomelin/sui-dapp-starter/issues) for similar issues.
+If nothing found, please [create a new issue](https://github.com/kkomelin/sui-dapp-starter/issues/new) and/or ask for help on [Discord](https://discord.com/invite/HuDPpXz4Hx).
 
 ## MacOS
 
