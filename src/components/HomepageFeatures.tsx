@@ -55,7 +55,7 @@ const features: IFeature[] = [
     ),
   },
   {
-    title: 'Common Sui Components',
+    title: 'Sui Components',
     description: (
       <>
         The <b>NetworkType, Balance, Faucet and other components</b> are
@@ -64,7 +64,7 @@ const features: IFeature[] = [
     ),
   },
   {
-    title: 'Custom Sui Hooks',
+    title: 'Sui Hooks',
     description: (
       <>
         The <b>useNetworkType, useBalance, useFaucet, useTransact</b> hooks
@@ -98,10 +98,13 @@ function Feature({ title, description }: IFeature) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="grid w-full md:grid-cols-4 gap-8 p-8 max-w-6xl mx-auto mb-12 mt-4">
-      {features.map(({ title, description }) => (
-        <Feature key={title} title={title} description={description} />
-      ))}
+    <section className="mx-auto mb-4 mt-8 flex w-full max-w-6xl flex-col gap-10 p-8 sm:mb-12">
+      <h2 className="text-center text-3xl">Why It's Different</h2>
+      <div className="grid w-full gap-8 md:grid-cols-4">
+        {features.map(({ title, description }) => (
+          <Feature key={title} title={title} description={description} />
+        ))}
+      </div>
     </section>
   )
 }

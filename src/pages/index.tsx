@@ -2,9 +2,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import InstallField from '@site/src/components/InstallField'
 import Heading from '@theme/Heading'
 import Layout from '@theme/Layout'
-import { BookOpenIcon, Gamepad2Icon } from 'lucide-react'
+import { BookOpenIcon, PointerIcon } from 'lucide-react'
 import ButtonLink from '../components/ButtonLink'
 import HomepageFeatures from '../components/HomepageFeatures'
+import HomepageReviews from '../components/HomepageReviews'
 import { DEMO_URL, SITE_TITLE } from '../constants/site'
 
 function HomepageHeader() {
@@ -15,7 +16,7 @@ function HomepageHeader() {
         <img
           src="/img/logo.svg"
           alt={`${SITE_TITLE} Logo`}
-          className="h-32 w-32 mt-4"
+          className="mt-4 h-32 w-32"
         />
 
         <Heading as="h1" className="hero__title">
@@ -32,12 +33,11 @@ function HomepageHeader() {
             target="_blank"
             id="demo-button"
             data-umami-event="Demo button"
-            className="!text-blue-500"
           >
-            Demo <Gamepad2Icon className="h-4 w-4" />
+            Demo <PointerIcon className="h-4 w-4" />
           </ButtonLink>
 
-          <ButtonLink to="/docs">
+          <ButtonLink to="/docs" color="secondary">
             Docs <BookOpenIcon className="h-4 w-4" />
           </ButtonLink>
         </div>
@@ -56,6 +56,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <HomepageReviews />
       </main>
     </Layout>
   )
