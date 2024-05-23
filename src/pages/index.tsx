@@ -48,15 +48,26 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
+
   return (
     <Layout
       // title={siteConfig.title}
       description={siteConfig.tagline}
     >
       <HomepageHeader />
-      <main>
+      <main className='mb-16'>
         <HomepageFeatures />
         <HomepageReviews />
+
+        <div className="mb-6 mt-0 flex flex-col items-center justify-center">
+          <iframe
+            className="overflow-hidden border-none"
+            src="https://ghbtns.com/github-btn.html?user=kkomelin&repo=sui-dapp-starter&type=star&count=true&size=large"
+            width="140"
+            height="30"
+            title="Star on Github"
+          ></iframe>
+        </div>
       </main>
     </Layout>
   )
