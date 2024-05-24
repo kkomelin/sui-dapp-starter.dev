@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 import {
+  DEMO_URL,
   DISCORD_INVITE_LINK,
   GITHUB_DOCS_PROJECT_NAME,
   GITHUB_DOCS_PROJECT_USER,
@@ -100,6 +101,10 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
+              label: 'Quick Start',
+              to: '/docs/',
+            },
+            {
               label: 'Frontend',
               to: '/docs/category/frontend',
             },
@@ -125,6 +130,10 @@ const config: Config = {
             //   label: "Blog",
             //   to: "/blog",
             // },
+            {
+              label: 'Demo (devnet)',
+              to: DEMO_URL,
+            },
             {
               label: 'GitHub',
               href: GITHUB_TARGET_PROJECT_URL,
