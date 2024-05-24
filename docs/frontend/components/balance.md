@@ -6,10 +6,14 @@ sidebar_position: 1
 
 The Balance component is used for displaying SUI balance for current user address on the currently active network.
 
+The balance is updated automatically with 3 second interval.
+
+Uses [useBalance()](../hooks/usebalance.md) under the hood.
+
 ## Usage
 
-```js title="MyComponent.js"
+```ts title="MyComponent.tsx"
 <Balance />
 ```
 
-Please note, the component doesn't display the balance if user didn't connect their wallet.
+Please note, the component doesn't display anything if user didn't connect their wallet.
