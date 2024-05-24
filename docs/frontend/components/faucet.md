@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Faucet
 
-The Faucet component is represented by a button that lets you fund your current address on the currently selected network.
+The `Faucet` component is represented by a button that lets you fund your current address on the currently selected test network.
 
 The supported networks are **localnet**, **devnet** and **testnet**.
 

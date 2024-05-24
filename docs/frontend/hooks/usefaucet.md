@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # useFaucet()
 
-The `useFaucet()` hook lets you fund an address from a specific test network.
+The `useFaucet()` hook lets you fund an address an a test network.
 
 The supported networks are **localnet**, **devnet** and **testnet**.
 

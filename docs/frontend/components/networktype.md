@@ -4,14 +4,14 @@ sidebar_position: 2
 
 # NetworkType
 
-The NetworkType component renders the name of the currently selected network or `disconnected` if no wallet connected.
+The `NetworkType` component renders the name of the currently selected network or `disconnected` if no wallet connected.
 
 It automatically re-fetches the network type every 3 seconds.
 
 Every network is displayed in its own color:
-- disconnected: tomato
-- localnet/devnet/testnet: amber
-- mainnet: green
+- <b style={{color:"#dc2626"}}>disconnected</b>: tomato
+- <b style={{color:"#d97706"}}>localnet/devnet/testnet</b>: amber
+- <b style={{color:"#16a34a"}}>mainnet</b>: green
 
 :::note
 
