@@ -12,7 +12,7 @@ Please note the component doesn't display anything if user didn't connect their 
 
 ## Usage
 
-```ts title="MyComponent.tsx"
+```tsx title="MyComponent.tsx"
 <Balance />
 ```
 

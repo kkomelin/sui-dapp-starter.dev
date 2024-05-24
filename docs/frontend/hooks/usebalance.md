@@ -10,7 +10,8 @@ It's possible to request the balance once or on a regular basis.
 
 ## Usage
 
-One-time request:
+### One-time request
+
 ```ts title="MyComponent.tsx"
   const { balance } = useBalance()
   // or
@@ -19,7 +20,7 @@ One-time request:
   })
 ```
 
-Regular update:
+### Regular update
 
 ```ts title="MyComponent.tsx"
   const { balance } = useBalance({ 
