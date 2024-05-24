@@ -8,9 +8,13 @@ The `useNetworkType()` hook lets you determine which network is currently active
 
 It's possible to request the network type once or on a regular basis.
 
-Please note the user wallet is the single point of truth and the only way to switch the network now is through wallet settings.
-
 If a wallet is not connected, the network type will be `undefined`.
+
+:::note
+
+The user wallet is the single point of truth and the only way to switch the network now is through wallet settings.
+
+:::
 
 ## Usage
 
@@ -44,4 +48,5 @@ Where `autoRefetchInterval` is in milliseconds. Default value is 3000 millisecon
 
 ## Used in
 
-\<NetworkType \/\>
+
+[\<NetworkType \/\>](../components/networktype.md)
