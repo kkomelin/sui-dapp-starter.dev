@@ -4,9 +4,17 @@ sidebar_position: 3
 
 # useFaucet()
 
-The `useBalance()` hook lets you request SUI balance for current user address on the currently active network.
+The `useFaucet()` hook lets you fund an address from a specific test network.
 
-It's possible to request the balance once or on a regular basis.
+The supported networks are **localnet**, **devnet** and **testnet**.
+
+The granted amount is:
+- localnet: 100 SUI
+- devnet: 10 SUI
+- testnet: 1 SUI
+
+Please note that there is a certain limit on the number of times you can request funds from **devnet** and **testnet**. 
+If you reached the limit, wait for 24 hours, and in the meanwhile use the `#devnet-faucet` and `#testnet-faucet` channels of the [official Sui Discord](https://discord.gg/sui).
 
 ## Usage
 

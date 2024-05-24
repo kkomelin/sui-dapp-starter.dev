@@ -29,7 +29,7 @@ const { balance } = useBalance({
 })
 ```
 
-Where `autoRefetchInterval` is in milliseconds.
+Where `autoRefetchInterval` is in milliseconds. Default value is 3000 milliseconds (3 seconds).
 
 ## Used in
 

@@ -38,4 +38,4 @@ greet(prepareTransaction(packageId, objectId, name))
 
 ## Uses
 
-[useSignAndExecuteTransactionBlock() from @mysten/dapp-kit](https://sdk.mystenlabs.com/dapp-kit/wallet-hooks/useSignAndExecuteTransactionBlock)
+[useSignAndExecuteTransactionBlock()](https://sdk.mystenlabs.com/dapp-kit/wallet-hooks/useSignAndExecuteTransactionBlock) from @mysten/dapp-kit
