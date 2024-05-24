@@ -8,7 +8,7 @@ The Balance component is used for displaying SUI balance for current user addres
 
 The balance is updated automatically with 3 second interval.
 
-Uses [useBalance()](../hooks/usebalance.md) under the hood.
+Please note the component doesn't display anything if user didn't connect their wallet.
 
 ## Usage
 
@@ -16,4 +16,6 @@ Uses [useBalance()](../hooks/usebalance.md) under the hood.
 <Balance />
 ```
 
-Please note, the component doesn't display anything if user didn't connect their wallet.
+## Uses
+
+[useBalance()](../hooks/usebalance.md)
