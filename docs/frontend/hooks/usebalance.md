@@ -13,20 +13,20 @@ It's possible to request the balance once or on a regular basis.
 ### One-time request
 
 ```ts title="MyComponent.tsx"
-  const { balance } = useBalance()
-  // or
-  const { balance } = useBalance({ 
-    autoRefetch: false 
-  })
+const { balance } = useBalance()
+// or
+const { balance } = useBalance({ 
+  autoRefetch: false 
+})
 ```
 
 ### Regular update
 
 ```ts title="MyComponent.tsx"
-  const { balance } = useBalance({ 
-    autoRefetch: true, 
-    autoRefetchInterval: 3000 
-  })
+const { balance } = useBalance({ 
+  autoRefetch: true, 
+  autoRefetchInterval: 3000 
+})
 ```
 
 Where `autoRefetchInterval` is in milliseconds.

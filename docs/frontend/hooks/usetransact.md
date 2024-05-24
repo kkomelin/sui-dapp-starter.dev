@@ -15,25 +15,25 @@ In case of error, we additionally print full error message in the browser consol
 ## Usage
 
 ```ts title="MyComponent.tsx"
-  const { transact: greet } = useTransact({
-    onSuccess: (response: SuiTransactionBlockResponse) => {
-      // Optionally react on success, e.g. refetch dependent queries.
-    },
-    onError: (e: Error) => {
-      // Optionally react on error.
-    }
-  })
-
-  const prepareTransaction = (packageId: string, objectId: string, name: string) => {
-    const txb = new TransactionBlock()
-    txb.moveCall({
-      arguments: [txb.object(objectId), txb.pure.string(name), txb.object('0x8')],
-      target: `${packageId}::greeting::set_greeting`,
-    })
-    return txb
+const { transact: greet } = useTransact({
+  onSuccess: (response: SuiTransactionBlockResponse) => {
+    // Optionally react on success, e.g. refetch dependent queries.
+  },
+  onError: (e: Error) => {
+    // Optionally react on error.
   }
- 
-  greet(prepareTransaction(packageId, objectId, name))
+})
+
+const prepareTransaction = (packageId: string, objectId: string, name: string) => {
+  const txb = new TransactionBlock()
+  txb.moveCall({
+    arguments: [txb.object(objectId), txb.pure.string(name), txb.object('0x8')],
+    target: `${packageId}::greeting::set_greeting`,
+  })
+  return txb
+}
+
+greet(prepareTransaction(packageId, objectId, name))
 ```
 
 ## Uses
