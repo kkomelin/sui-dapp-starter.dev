@@ -49,12 +49,13 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
-        },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
