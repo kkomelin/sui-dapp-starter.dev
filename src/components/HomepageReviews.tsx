@@ -18,7 +18,7 @@ const reviews: IReview[] = [
   },
   {
     name: '@Erarnitox',
-    description: <>Thank your for providing this for us! And even for free!</>,
+    description: <>Thank you for providing this for us! And even for free!</>,
   },
   {
     name: '@pinebit',
