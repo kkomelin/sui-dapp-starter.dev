@@ -20,6 +20,13 @@ const { balance } = useBalance({
 })
 ```
 
+### On demand
+
+```ts title="MyComponent.tsx"
+const { balance, error, refetch } = useBalance()
+refetch()
+```
+
 ### Regular update
 
 ```ts title="MyComponent.tsx"
@@ -33,4 +40,4 @@ Where `autoRefetchInterval` is in milliseconds. Default value is 3000 millisecon
 
 ## Used in
 
-[\<Balance \/\>](../components/balance.md)
+[\<Balance \/\>](../components/Balance.md)

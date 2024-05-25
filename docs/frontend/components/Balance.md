@@ -18,4 +18,4 @@ Please note the component doesn't display anything if user didn't connect their 
 
 ## Uses
 
-[useBalance()](../hooks/usebalance.md)
+[useBalance()](../hooks/useBalance.md)

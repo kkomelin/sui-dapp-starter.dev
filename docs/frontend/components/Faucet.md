@@ -28,4 +28,4 @@ If you reached the limit, wait for 24 hours, and in the meanwhile use the `#devn
 
 ## Uses
 
-[useFaucet()](../hooks/usefaucet.md)
+[useFaucet()](../hooks/useFaucet.md)

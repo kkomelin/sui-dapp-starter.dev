@@ -40,4 +40,4 @@ fund('0xADDRESS')
 
 ## Used in
 
-[\<Faucet \/\>](../components/faucet.md)
+[\<Faucet \/\>](../components/Faucet.md)
