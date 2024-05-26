@@ -6,6 +6,7 @@ import { BookOpenIcon, PointerIcon } from 'lucide-react'
 import ButtonLink from '../components/ButtonLink'
 import HomepageFeatures from '../components/HomepageFeatures'
 import HomepageReviews from '../components/HomepageReviews'
+import HomepageVideo from '../components/HomepageVideo'
 import { DEMO_URL, SITE_TITLE } from '../constants/site'
 
 function HomepageHeader() {
@@ -55,7 +56,8 @@ export default function Home(): JSX.Element {
       description={siteConfig.tagline}
     >
       <HomepageHeader />
-      <main className='mb-16'>
+      <main className="mb-16">
+        <HomepageVideo />
         <HomepageFeatures />
         <HomepageReviews />
 
