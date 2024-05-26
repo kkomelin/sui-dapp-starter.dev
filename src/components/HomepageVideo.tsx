@@ -5,7 +5,7 @@ export default function HomepageVideo(): JSX.Element {
   const [loading, setLoading] = useState(true)
 
   return (
-    <section className="mx-auto mb-16 mt-6 flex w-full max-w-6xl flex-col gap-4 p-8">
+    <section className="mx-auto mb-6 mt-6 flex w-full max-w-6xl flex-col gap-4 p-8">
       <div className="relative h-0 pb-[62.5%]">
         {loading ? <VideoLoading /> : <></>}
         <iframe
