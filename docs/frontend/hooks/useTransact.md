@@ -15,8 +15,11 @@ In case of error, we additionally print full error message in the browser consol
 ## Usage
 
 ```ts title="MyComponent.tsx"
+import type { SuiSignAndExecuteTransactionOutput } from '@mysten/wallet-standard'
+import { Transaction } from '@mysten/sui/transactions'
+
 const { transact: greet } = useTransact({
-  onSuccess: (response: SuiTransactionBlockResponse) => {
+  onSuccess: (data: SuiSignAndExecuteTransactionOutput) => {
     // Optionally react on success, e.g. refetch dependent queries.
   },
   onError: (e: Error) => {
@@ -25,12 +28,12 @@ const { transact: greet } = useTransact({
 })
 
 const prepareTransaction = (packageId: string, objectId: string, name: string) => {
-  const txb = new TransactionBlock()
-  txb.moveCall({
-    arguments: [txb.object(objectId), txb.pure.string(name), txb.object('0x8')],
+  const tx = new Transaction()
+  tx.moveCall({
+    arguments: [tx.object(objectId), tx.pure.string(name), tx.object('0x8')],
     target: `${packageId}::greeting::set_greeting`,
   })
-  return txb
+  return tx
 }
 
 greet(prepareTransaction(packageId, objectId, name))
@@ -38,4 +41,4 @@ greet(prepareTransaction(packageId, objectId, name))
 
 ## Uses
 
-[useSignAndExecuteTransactionBlock()](https://sdk.mystenlabs.com/dapp-kit/wallet-hooks/useSignAndExecuteTransactionBlock) from @mysten/dapp-kit
+[useSignAndExecuteTransaction()](https://sdk.mystenlabs.com/dapp-kit/wallet-hooks/useSignAndExecuteTransaction) from @mysten/dapp-kit
