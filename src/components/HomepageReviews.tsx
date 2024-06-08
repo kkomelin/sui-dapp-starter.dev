@@ -7,6 +7,23 @@ interface IReview {
 
 const reviews: IReview[] = [
   {
+    name: '@b1ackd0g',
+    description: (
+      <>
+        Have been following this in the Overflow Discord--looks extremely useful
+      </>
+    ),
+  },
+  {
+    name: '@PerelmanDmitri',
+    description: (
+      <>
+        Thanks for doing that: this type of utilities are crucial for lowering
+        the entrance barriers.
+      </>
+    ),
+  },
+  {
     name: '@Xenon',
     description: (
       <>
