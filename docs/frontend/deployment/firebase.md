@@ -1,6 +1,10 @@
+---
+position: 1
+---
+
 # Firebase
 
-To deploy the frontend part of a Sui dApp Starter project, do the following:
+To deploy the frontend part of a Sui dApp Starter project to Firebase, do the following:
 
 ### 1. Install Firebase Tools
 
@@ -15,7 +19,7 @@ pnpm add -g firebase-tools
 ### 3. Init your project
 
 ```bash
-pnpm frontend:deploy:init
+pnpm frontend:deploy:firebase:init
 ```
 
 1) You will be asked to Login to Firebase.
@@ -25,7 +29,7 @@ pnpm frontend:deploy:init
 ### 4. Deploy to Firebase
 
 ```bash
-pnpm frontend:deploy
+pnpm frontend:deploy:firebase
 ```
 
 ## Links
