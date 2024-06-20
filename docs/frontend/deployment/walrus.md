@@ -2,7 +2,7 @@
 position: 2
 ---
 
-# Walrus Sites (testnet only)
+# [experimental] Walrus Sites (testnet only)
 
 :::warning
 
@@ -28,6 +28,12 @@ Follow the [official Walrus Site Builder guide](https://mystenlabs.github.io/wal
 ```bash
 pnpm frontend:deploy:walrus
 ```
+
+## Current Limitations
+
+1. Walrus Sites doesn't support the icons declared in the Web Manifest file.
+
+2. Walrus Sites doesn't support Service Workers in the root scope because it sets its own root-scoped service worker.
 
 
 ## Troubleshooting
