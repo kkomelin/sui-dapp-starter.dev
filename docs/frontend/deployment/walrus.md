@@ -14,14 +14,19 @@ To deploy the frontend part of a Sui dApp Starter project to Sui through Walrus 
 
 ## Installation
 
-### 1. Install Walrus 
+### 1. Activate testnet network
 
-Follow the [official Walrus setup guide](https://mystenlabs.github.io/walrus-docs/usage/setup.html).
+```bash
+testnet start
+```
 
-### 2. Install Walrus Site Builder
+### 2. Install Walrus 
 
-Follow the [official Walrus Site Builder guide](https://mystenlabs.github.io/walrus-docs/walrus-sites/tutorial-install.html).
+Follow the [official Walrus setup guide - installation section](https://mystenlabs.github.io/walrus-docs/usage/setup.html#installation).
 
+### 3. Install Walrus Site Builder
+
+Follow the [official Walrus Site Builder setup guide](https://mystenlabs.github.io/walrus-docs/walrus-sites/tutorial-install.html).
 
 ## Usage
 
