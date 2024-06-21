@@ -17,7 +17,7 @@ To deploy the frontend part of a Sui dApp Starter project to Sui through Walrus 
 ### 1. Activate testnet network
 
 ```bash
-testnet start
+pnpm testnet:start
 ```
 
 ### 2. Install Walrus 
