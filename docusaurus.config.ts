@@ -6,8 +6,9 @@ import {
   DEMO_URL,
   DISCORD_INVITE_LINK,
   GITHUB_DOCS_PROJECT_NAME,
+  GITHUB_DOCS_PROJECT_URL,
   GITHUB_DOCS_PROJECT_USER,
-  GITHUB_TARGET_PROJECT_URL,
+  GITHUB_STARTER_PROJECT_URL,
   SITE_SLOGAN,
   SITE_TITLE,
   SITE_URL,
@@ -47,7 +48,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
+          editUrl: `${GITHUB_DOCS_PROJECT_URL}/tree/main/`,
         },
         blog: false,
         // blog: {
@@ -89,7 +90,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: GITHUB_TARGET_PROJECT_URL,
+          href: GITHUB_STARTER_PROJECT_URL,
           label: 'GitHub',
           position: 'right',
         },
@@ -137,7 +138,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: GITHUB_TARGET_PROJECT_URL,
+              href: GITHUB_STARTER_PROJECT_URL,
             },
           ],
         },
@@ -147,6 +148,14 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    announcementBar: {
+      id: 'celebrate_with_us',
+      content:
+        '<div style="padding:10px;">Sui dApp Starter <a target="_blank" rel="noopener noreferrer" href="https://blog.sui.io/2024-sui-overflow-hackathon-winners">has won the 1st place</a> in the Randomness category of Sui Overflow 2024! Celebrate with us by <a target="_blank" rel="noopener noreferrer" href="https://demo.sui-dapp-starter.dev/">minting</a> your own random Greeting NFT!</div>',
+      backgroundColor: '#a855f7',
+      textColor: '#ffffff',
+      isCloseable: false,
     },
   } satisfies Preset.ThemeConfig,
   headTags: [
