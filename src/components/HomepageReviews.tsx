@@ -7,6 +7,14 @@ interface IReview {
 
 const reviews: IReview[] = [
   {
+    name: '@brendan.sui',
+    description: (
+      <>
+        Appreciate the effort you've put in here, as well as your local explorer repo!
+      </>
+    ),
+  },
+  {
     name: '@b1ackd0g',
     description: (
       <>
