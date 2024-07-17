@@ -22,7 +22,7 @@ Through your Arweave wallet settings, export your Arweave keyfile and save as `a
 
 :::warning
 
-We added the `arweave-keyfile.json` file name to `.gitignore`, so that it's not pushed to Git accidentally.
+We added the `arweave-keyfile.json` file name to `.gitignore`, so that you don't push it to Git accidentally.
 However if you want to use your custom file name, make sure you have added it to `.gitignore`.
 Remember to never push your keyfiles to Git!
 
