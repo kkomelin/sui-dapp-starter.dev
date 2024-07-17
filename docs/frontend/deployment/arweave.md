@@ -14,7 +14,7 @@ Some of the Arweave wallets are Arweave.app Web Wallet and ArConnect (browser pl
 
 Then buy some amount of AR coins for example on a centralized exchange and put it to your newly created wallet address. 
 
-_It should take 0.02 AR approximately to deploy a small app (1.5Mb). Please note this cost may vary._
+_It should take 0.02 AR approximately to deploy a small app (1.5Mb). Please note this amount may vary._
 
 ### 2. Export wallet keyfile
 
