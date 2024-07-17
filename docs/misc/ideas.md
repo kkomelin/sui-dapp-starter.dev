@@ -10,7 +10,10 @@ Ideas on how to make Sui dApp Starter better. Sort of a roadmap without delivery
 - [x] frontend: Better UI notifications
 - [x] frontend: Add app icons and Web manifest
 - [x] frontend: Develop Sui-specific UI components
-- [x] frontend: Add Firebase deployment scripts
+- [x] frontend: Add Firebase deployment option
+- [x] frontend: Add Walrus Sites deployment option
+- [x] frontend: Add Arweave deployment option
+- [x] backend: Implemented Sui Object Display for the Greeting object
 - [x] backend: Add a Randomness usage example
 - [x] infra: Integrate with Local Sui Explorer
 - [x] infra: Develop a cli tool for easier project creation
@@ -18,7 +21,6 @@ Ideas on how to make Sui dApp Starter better. Sort of a roadmap without delivery
 - [x] docs: Develop a site with documentation
 - [ ] docs: Write/record how-to guides
 - [ ] frontend: Develop better Sui Kit, Tailwind and Radix theme integration
-- [ ] frontend: Add Arweave deployment scripts
 - [ ] infra: Enable Husky and lint-staged for pre-commit
 - [ ] backend: Find a way to lint and format the backend contracts
 - [ ] backend: Github Actions for linting and testing the contracts
