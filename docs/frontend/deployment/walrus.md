@@ -2,7 +2,7 @@
 position: 2
 ---
 
-# Walrus Sites (experimental; testnet only)
+# Walrus Sites (experimental, testnet only)
 
 :::warning
 
