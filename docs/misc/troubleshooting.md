@@ -32,17 +32,6 @@ Another option which someone reported working is:
 localnet build
 ```
 
-### Could not start Local Sui Explorer
-
-```
-$ pnpm localnet:explorer:start
-$ local-sui-explorer start
-Command failed with exist code 1.
-```
-
-Try installing Docker as non-Root user or change permissions for docker config files to be accessible for a non-Root user.
-
-
 ---
 
 Didn't find your issue? [Report it to us ->](https://github.com/kkomelin/sui-dapp-starter/issues/new)

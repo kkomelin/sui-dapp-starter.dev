@@ -15,7 +15,6 @@ or continue with this guide to create and run a new project locally.
 
 - [Sui prerequisites](https://docs.sui.io/build/install#prerequisites) (Sui prerequisites only)
 - [Suibase](https://suibase.io/how-to/install.html)
-- [Docker](https://docs.docker.com/engine/install/)
 - [Node (>= 20)](https://nodejs.org/en/download/)
 - [pnpm (>= 9)](https://pnpm.io/installation)
 
