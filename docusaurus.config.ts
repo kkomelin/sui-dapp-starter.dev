@@ -133,7 +133,7 @@ const config: Config = {
             //   to: "/blog",
             // },
             {
-              label: 'Demo (testnet)',
+              label: 'Demo',
               to: DEMO_URL,
             },
             {
