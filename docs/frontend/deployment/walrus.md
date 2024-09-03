@@ -34,12 +34,15 @@ Follow the [official Walrus Site Builder setup guide](https://mystenlabs.github.
 pnpm frontend:deploy:walrus
 ```
 
+## Configuration
+
+Walrus Sites configuration for the app is stored in `packages/frontend/walrus-sites.yaml`.
+
 ## Current Limitations
 
 1. Walrus Sites doesn't support the icons declared in the Web Manifest file.
 
 2. Walrus Sites doesn't support Service Workers in the root scope because it sets its own root-scoped service worker.
-
 
 ## Troubleshooting
 
@@ -52,8 +55,6 @@ If you installed `site-builder`, you need to add its path to PATH or add a symbo
 You probably need to add `~/.walrus/client_config.yaml` config.
 
 3. TBC
-
-
 
 ## Links
 
