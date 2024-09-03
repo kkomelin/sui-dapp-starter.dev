@@ -8,7 +8,11 @@ The `Balance` component is used for displaying SUI balance for current user addr
 
 The balance is updated automatically with 3 second interval.
 
-Please note the component doesn't display anything if user didn't connect their wallet.
+:::note
+
+Please note the component doesn't display anything if user wallet is not connected.
+
+:::
 
 ## Usage
 

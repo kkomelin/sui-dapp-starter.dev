@@ -15,8 +15,8 @@ The granted amount is:
 
 :::note
 
-There is a certain limit on the number of times you can request funds from **devnet** and **testnet**. 
-If you reached the limit, wait for 24 hours, and in the meanwhile use the `#devnet-faucet` and `#testnet-faucet` channels of the [official Sui Discord](https://discord.gg/sui).
+There is a quota for requesting funds from **devnet** and **testnet**. 
+If you have reached the limit, wait for 24 hours, and in the meanwhile use the `#devnet-faucet` and `#testnet-faucet` channels of the [official Sui Discord](https://discord.gg/sui).
 
 :::
 
