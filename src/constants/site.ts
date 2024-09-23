@@ -1,5 +1,5 @@
 export const SITE_TITLE = 'Sui dApp Starter'
-export const SITE_SLOGAN = 'Full-Stack Sui Starter on Steroids'
+export const SITE_SLOGAN = 'Easy-to-Use Full-Stack Sui Starter'
 export const SITE_URL = 'https://sui-dapp-starter.dev'
 export const GITHUB_DOCS_PROJECT_NAME = 'sui-dapp-starter.dev'
 export const GITHUB_DOCS_PROJECT_USER = 'kkomelin'
