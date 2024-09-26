@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "dev": "pnpm start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "USE_SSH=true docusaurus deploy",
@@ -21,6 +22,7 @@
     "@easyops-cn/docusaurus-search-local": "^0.44.5",
     "@mdx-js/react": "^3.0.1",
     "clsx": "^2.1.1",
+    "fuzzysort": "^3.0.2",
     "lucide-react": "^0.445.0",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.1",
