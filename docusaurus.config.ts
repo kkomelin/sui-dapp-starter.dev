@@ -107,6 +107,10 @@ const config: Config = {
               to: '/docs/',
             },
             {
+              label: 'Console Commands',
+              to: '/docs/misc/commands',
+            },
+            {
               label: 'Frontend',
               to: '/docs/category/frontend',
             },
