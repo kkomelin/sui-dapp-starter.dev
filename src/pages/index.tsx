@@ -3,6 +3,7 @@ import InstallField from '@site/src/components/InstallField'
 import Heading from '@theme/Heading'
 import Layout from '@theme/Layout'
 import { BookOpenIcon, PointerIcon } from 'lucide-react'
+import { useEffect } from 'react'
 import ButtonLink from '../components/ButtonLink'
 import HomepageFeatures from '../components/HomepageFeatures'
 import HomepageReviews from '../components/HomepageReviews'
@@ -49,6 +50,15 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
+
+  useEffect(() => {
+    // Widgetbot.
+    // @ts-ignore
+    new Crate({
+      server: '1237259509366521866', // Sui dApp Starter
+      channel: '1287829293216436330', // #sui-dapp-starter
+    })
+  }, [])
 
   return (
     <Layout

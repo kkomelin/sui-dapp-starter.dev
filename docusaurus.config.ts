@@ -203,6 +203,15 @@ const config: Config = {
         color: '#4da2ff',
       },
     },
+    // Widgetbot.
+    {
+      tagName: 'script',
+      attributes: {
+        src: 'https://cdn.jsdelivr.net/npm/@widgetbot/crate@3',
+        async: "true",
+        defer: "true",
+      },
+    },
     // // Declare some json-ld structured data
     // {
     //   tagName: 'script',
