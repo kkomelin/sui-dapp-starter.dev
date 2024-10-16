@@ -31,6 +31,6 @@ Comparison with other starters and advantages over them.
 - frontend: Implemented UI notifications, integrated with Local Sui Explorer.
 - frontend: Developed several useful hooks and UI components: useNetworkType, NetworkType, useBalance, Balance, useFaucet, Faucet, NetworkSupportChecker.
 - frontend: Added Firebase, Walrus Sites and Arweave deployment configuration and commands.
-- backend: Simplified network management commands via [Suibase](https://suibase.io/).
+- backend: Simplified network management commands and system dependency installation via [Suibase](https://suibase.io/).
 - backend: Added an On-Chain Randomness and Sui Object Display usage examples.
 - frontend/backend: A script to automatically copy the deployed package ID to the frontend app configuration after deployment.

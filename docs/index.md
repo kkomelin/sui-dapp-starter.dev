@@ -13,7 +13,6 @@ or continue with this guide to create and run a new project locally.
 
 ### 1. Install system requirements
 
-- [Sui prerequisites](https://docs.sui.io/build/install#prerequisites) (Sui prerequisites only)
 - [Suibase](https://suibase.io/how-to/install.html)
 - [Node (>= 20)](https://nodejs.org/en/download/)
 - [pnpm (>= 9)](https://pnpm.io/installation)

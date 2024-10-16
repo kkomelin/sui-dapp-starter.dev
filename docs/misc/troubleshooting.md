@@ -24,7 +24,7 @@ If it doesn’t work, try setting:
 precompiled_bin=false
 ```
 
-_It will force Suibase to compile Sui binaries from sources._
+_It will [force Suibase to compile Sui binaries](https://suibase.io/how-to/configure-suibase-yaml.html#force-to-build-locally) from sources._
 
 Another option which someone reported working is:
 
