@@ -19,11 +19,11 @@
   "dependencies": {
     "@docusaurus/core": "3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
-    "@easyops-cn/docusaurus-search-local": "^0.44.5",
-    "@mdx-js/react": "^3.0.1",
+    "@easyops-cn/docusaurus-search-local": "^0.45.0",
+    "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
-    "fuzzysort": "^3.0.2",
-    "lucide-react": "^0.445.0",
+    "fuzzysort": "^3.1.0",
+    "lucide-react": "^0.453.0",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -35,9 +35,9 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "tailwindcss": "^3.4.12",
-    "typescript": "~5.6.2"
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.14",
+    "typescript": "~5.6.3"
   },
   "browserslist": {
     "production": [

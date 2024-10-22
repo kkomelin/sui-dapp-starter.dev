@@ -50,13 +50,16 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: `${GITHUB_DOCS_PROJECT_URL}/tree/main/`,
         },
-        blog: false,
+        // blog: false,
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
         //   // editUrl: `${GITHUB_TARGET_PROJECT_URL}/tree/main/`,
         // },
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -88,7 +91,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        // { to: "/blog", label: "Blog", position: "left" },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: GITHUB_STARTER_PROJECT_URL,
           label: 'GitHub',
@@ -132,10 +135,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            // {
-            //   label: "Blog",
-            //   to: "/blog",
-            // },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
             {
               label: 'Demo',
               to: DEMO_URL,
@@ -153,14 +156,14 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    announcementBar: {
-      id: 'celebrate_with_us',
-      content:
-        '<div style="padding:10px;">Sui dApp Starter <a target="_blank" rel="noopener noreferrer" href="https://blog.sui.io/2024-sui-overflow-hackathon-winners">has won the 1st place</a> in the Randomness category of Sui Overflow 2024! Celebrate with us by <a target="_blank" rel="noopener noreferrer" href="https://demo.sui-dapp-starter.dev/">minting</a> your own random Greeting NFT!</div>',
-      backgroundColor: '#a855f7',
-      textColor: '#ffffff',
-      isCloseable: false,
-    },
+    // announcementBar: {
+    //   id: 'celebrate_with_us',
+    //   content:
+    //     '<div style="padding:10px;">Sui dApp Starter <a target="_blank" rel="noopener noreferrer" href="https://blog.sui.io/2024-sui-overflow-hackathon-winners">has won the 1st place</a> in the Randomness category of Sui Overflow 2024! Celebrate with us by <a target="_blank" rel="noopener noreferrer" href="https://demo.sui-dapp-starter.dev/">minting</a> your own random Greeting NFT!</div>',
+    //   backgroundColor: '#a855f7',
+    //   textColor: '#ffffff',
+    //   isCloseable: false,
+    // },
   } satisfies Preset.ThemeConfig,
   headTags: [
     {
@@ -208,8 +211,8 @@ const config: Config = {
       tagName: 'script',
       attributes: {
         src: 'https://cdn.jsdelivr.net/npm/@widgetbot/crate@3',
-        async: "true",
-        defer: "true",
+        async: 'true',
+        defer: 'true',
       },
     },
     // // Declare some json-ld structured data
