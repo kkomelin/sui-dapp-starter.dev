@@ -1,6 +1,6 @@
 ---
 slug: 1st-prize-sui-overflow-hackathon
-title: Sui dApp Starter has won the 1st prize at Sui Overflow Hackathon 2024
+title: Won the 1st prize at Sui Overflow Hackathon 2024
 authors: kkomelin
 tags: [hackathon]
 ---
